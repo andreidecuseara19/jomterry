@@ -34,7 +34,7 @@ int main(int argc, char **argv)
 
         check((server_socket = socket(AF_INET, SOCK_STREAM, 0)), "Eroare la crearea socket-ului");
 
-//init the adress struct
+//initializam structura adresei
         server_addr.sin_family = AF_INET;
         server_addr.sin_addr.s_addr = INADDR_ANY;
         server_addr.sin_port = htons(PORT);
